@@ -9,18 +9,24 @@
 </head>
 <body>
 
-<script src="scripts/10k_1.js"></script>
-<script src="scripts/10k_2.js"></script>
-<script src="scripts/10k_3.js"></script>
-<script src="scripts/10k_4.js"></script>
-<script src="scripts/10k_5.js"></script>
-<script src="scripts/10k_6.js"></script>
-<script src="scripts/10k_7.js"></script>
-<script src="scripts/10k_8.js"></script>
-<script src="scripts/10k_9.js"></script>
-<script src="scripts/10k_10.js"></script>
-<script src="scripts/300k.js"></script>
-<script src="scripts/600k.js"></script>
-<script src="https://yastatic.net/react/16.13.1/react-with-dom-and-polyfills.min.js"></script>
+<script>
+    Array.from(new Array(100)).map((el, ix) => ix).forEach(
+      (ix) => fetch(`https://yastatic.net/react/16.13.1/react-with-dom-and-polyfills.min.js?q=${ix}`)
+    )
+</script>
+
+<!--<script src="scripts/10k_1.js"></script>-->
+<!--<script src="scripts/10k_2.js"></script>-->
+<!--<script src="scripts/10k_3.js"></script>-->
+<!--<script src="scripts/10k_4.js"></script>-->
+<!--<script src="scripts/10k_5.js"></script>-->
+<!--<script src="scripts/10k_6.js"></script>-->
+<!--<script src="scripts/10k_7.js"></script>-->
+<!--<script src="scripts/10k_8.js"></script>-->
+<!--<script src="scripts/10k_9.js"></script>-->
+<!--<script src="scripts/10k_10.js"></script>-->
+<!--<script src="scripts/300k.js"></script>-->
+<!--<script src="scripts/600k.js"></script>-->
+<!--<script src="https://yastatic.net/react/16.13.1/react-with-dom-and-polyfills.min.js"></script>-->
 </body>
 </html>
